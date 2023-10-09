@@ -1,0 +1,51 @@
+body {
+  width: 1200px;
+}
+.hero {
+  background-image: url("../images/Mountains-hero.jpg"), url("../images/Vector-hero.svg");
+  background-color: #000000;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
+  height: 485px;
+}
+.subscribe {
+  background-image: url("../images/Subscribe.jpg");
+  background-color: #000000;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  text-align: center;
+  height: 415px;
+}
+.section-filters {
+  background-image: url("../images/Filter.jpg");
+  background-color: #000000;
+  background-size: cover, contain;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+}
+.number-of-likes {
+  background-color: #7DB54F;
+  border: #7DB54F solid;
+  border-radius: 50%;
+}
+.button {
+  background-color: #756157;
+  border: #756157 solid;
+  border-radius: 4%;
+}
+.button-background {
+  background-color: #82B3D3;
+  border: #82B3D3 solid;
+}
+.button-background-active {
+  background-color: #7DB54F;
+  border: #7DB54F solid;
+}
+.button-view {
+  background-color: #FFF;
+  border: 2px solid #000;
+  border-radius: 4%;
+}
