@@ -43,7 +43,7 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-container main-inner">
       <div class="section-filters">
       <header class="inner-header">
         <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -106,28 +106,32 @@
               <input class="price-min" placeholder="0 от" type="text" name="price" required>
               <input class="price-max" placeholder="9000 до" type="text" name="price" required>
             </fieldset>
-            <button class="button brand-color" type="submit">Применить</button>
-            <button class="button" type="submit">Сбросить</button>
+            <div class="container-button">
+              <button class="button brand-color" type="submit">Применить</button>
+              <button class="button" type="submit">Сбросить</button>
+            </div>
           </form>
         </section>
       </div>
         <section class="catalog-hotels">
-          <h2 class="visually-hidden">Результат применённых фильтров</h2>
-          <h3 class="subject">Найдено гостиниц: <span>38</span></h3>
-          <select class="select-control" aria-label="Сортировка">
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="popular">Сначала популярные</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <a class="button button-view tile" href="#">
-            <span class="visually-hidden">Плитка</span>
-          </a>
-          <a class="button button-view gallery" href="#">
-            <span class="visually-hidden">Галерея</span>
-          </a>
-          <a class="button button-view list" href="#">
-            <span class="visually-hidden">Список</span>
-          </a>
+          <div class="container-options">
+            <h2 class="visually-hidden">Результат применённых фильтров</h2>
+            <h3 class="subject">Найдено гостиниц: <span>38</span></h3>
+            <select class="select-control" aria-label="Сортировка">
+              <option value="cheap">Сначала дешёвые</option>
+              <option value="popular">Сначала популярные</option>
+              <option value="expensive">Сначала дорогие</option>
+            </select>
+            <a class="button button-view tile" href="#">
+              <span class="visually-hidden">Плитка</span>
+            </a>
+            <a class="button button-view gallery" href="#">
+              <span class="visually-hidden">Галерея</span>
+            </a>
+            <a class="button button-view list" href="#">
+              <span class="visually-hidden">Список</span>
+            </a>
+          </div>
           <ul class="product-list">
             <li class="product-card">
               <a class="product-card-link" href="#">
@@ -142,13 +146,13 @@
               <button class="button brand-color" type="button">В избранное</button>
               <div class="group">
                 <ol class="rating-hotels">
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">1 звезда</span>
                   </li>
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">2 звезды</span>
                   </li>
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">3 звезды</span>
                   </li>
                   <li class="active">
@@ -174,13 +178,13 @@
               <button class="button button-background-active" type="button">В избранное</button>
               <div class="group">
                 <ol class="rating-hotels">
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">1 звезда</span>
                   </li>
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">2 звезды</span>
                   </li>
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">3 звезды</span>
                   </li>
                   <li class="active">
@@ -206,10 +210,10 @@
               <button class="button brand-color" type="button">В избранное</button>
               <div class="group">
                 <ol class="rating-hotels">
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">1 звезда</span>
                   </li>
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">2 звезды</span>
                   </li>
                   <li class="active">
@@ -238,7 +242,7 @@
               <button class="button brand-color" type="button">В избранное</button>
               <div class="group">
                 <ol class="rating-hotels">
-                  <li class="stars">
+                  <li class="active">
                     <span class="visually-hidden">1 звезда</span>
                   </li>
                   <li class="active">
@@ -259,10 +263,9 @@
             </li>
           </ul>
         </section>
-        <footer class="catalog-footer">
           <ul class="pagination">
-            <li class="pagination-item">
-              <a class="pagination-link pagination-current">1</a>
+            <li class="pagination-item pagination-current">
+              <a class="pagination-link">1</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link">2</a>
@@ -273,17 +276,16 @@
             <li class="pagination-item">
               <a class="pagination-link">4</a>
             </li>
-            <li class="pagination-item">
+            <li class="pagination-item pagination-more">
               <a class="pagination-link">...</a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link">10</a>
             </li>
           </ul>
-        </footer>
     <section class="subscribe-inner">
       <h2 class="subject">Подпишитесь на рассылку</h2>
-      <p class="desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+      <p class="desc">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
       <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
         <label class="subscribe-email"></label>
         <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
@@ -292,6 +294,7 @@
     </section>
     </main>
   <footer class="page-footer">
+    <div class="page-footer-container">
     <ul class="social-list">
       <li class="social-item">
         <a class="social-link" href="https://vk.com/htmlacademy">
@@ -322,6 +325,7 @@
     <a class="footer-logo" href="https://htmlacademy.ru/">
       <img class="footer-logo-image" src="images/logo_footer.svg" alt="HTML Academy">
     </a>
+    </div>
   </footer>
   </div>
 </body>
