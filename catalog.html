@@ -2,12 +2,13 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.png">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Каталог</title>
   </head>
   <body>
     <div class="page-container">
-      <header class="main-header">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html">
             <img class="main-header-logo" src="images/logo_header.svg" width="140" height="70" alt="Логотип City of Sedona" >
@@ -41,7 +42,7 @@
           </ul>
         </nav>
       </header>
-    <main class="main-container main-inner">
+    <main class="main-container main-inner" data-test="main">
       <div class="section-filters">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
@@ -54,7 +55,7 @@
             <a class="breadcrumbs-link" href="">Гостиницы</a>
           </li>
         </ul>
-        <section class="filters">
+        <section class="filters" data-test="filters">
           <h2 class="visually-hidden">Каталог с фильтрами</h2>
           <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
             <div class="service-hotel">
@@ -145,7 +146,7 @@
           </form>
         </section>
       </div>
-      <section class="catalog-hotels">
+      <section class="catalog-hotels" data-test="catalog-hotels">
         <div class="container-options">
           <h2 class="visually-hidden">Результат применённых фильтров</h2>
           <h3 class="subject">Найдено гостиниц: <span>38</span></h3>
@@ -208,7 +209,7 @@
                 <span class="visually-hidden">5 звезд</span>
               </li>
             </ol>
-            <p class="rating">Рейтинг: <span> 8,5</span></p>
+            <p class="rating">Рейтинг: 8,5</p>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -238,7 +239,7 @@
                   <span class="visually-hidden">5 звезд</span>
                 </li>
               </ol>
-              <p class="rating">Рейтинг: <span> 9,2</span></p>
+              <p class="rating">Рейтинг: 9,2</p>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -268,7 +269,7 @@
                   <span class="visually-hidden">5 звезд</span>
                 </li>
               </ol>
-              <p class="rating">Рейтинг: <span> 6,9</span></p>
+              <p class="rating">Рейтинг: 6,9</p>
           </li>
           <li class="product-card">
             <a class="product-card-link" href="#">
@@ -298,7 +299,7 @@
                   <span class="visually-hidden">5 звезд</span>
                 </li>
               </ol>
-              <p class="rating">Рейтинг: <span> 5,0</span></p>
+              <p class="rating">Рейтинг: 5,0</p>
           </li>
         </ul>
         <ul class="pagination">
@@ -322,7 +323,7 @@
           </li>
         </ul>
       </section>
-      <section class="subscribe-inner">
+      <section class="subscribe-inner" data-test="subscribe-inner">
         <div class="container-text-service text-position">
           <h2 class="subject">Подпишитесь на рассылку</h2>
           <p class="desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -334,7 +335,7 @@
         </form>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer" data-test="footer">
       <ul class="social-list">
         <li class="social-item">
           <a class="social-link" href="https://vk.com/htmlacademy">
