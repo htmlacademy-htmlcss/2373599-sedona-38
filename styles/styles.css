@@ -49,6 +49,7 @@ body {
   position: relative;
   display: block;
   width: 140px;
+  height: 70px;
   margin-bottom: -6px;
 }
 
@@ -319,6 +320,7 @@ body {
 }
 
 .advantages-item-img {
+  width: 800px;
   height: 100%;
   object-fit: cover;
 }
@@ -516,7 +518,7 @@ body {
   color: rgb(255, 255, 255, 0.6);
 }
 
-.breadcrumbs-item:focus-visible .breadcrumbs-link {
+.breadcrumbs-item:focus .breadcrumbs-link {
   color: rgb(255, 255, 255);
 }
 
@@ -703,22 +705,21 @@ body {
   color: #333333;
   -webkit-appearance: none;
           appearance: none;
-  cursor: pointer;
+
 }
 
 .select-arrow {
   position: absolute;
   bottom: 14px;
   left: 259px;
-  cursor: pointer;
 }
 
 .select-arrow svg {
   fill: #000000;
 }
 
-.select-control:hover,
-.select-control:focus {
+.select-control:hover:not(:disabled),
+.select-control:focus:not(:disabled) {
   border: 2px solid #68a2ca;
 }
 
@@ -918,6 +919,7 @@ body {
 }
 
 .photo-hotel {
+  width: 300px;
   height: 100%;
   object-fit: cover;
 }
@@ -1164,7 +1166,7 @@ body {
   background-color: #e6e6e6;
 }
 
-.modal-close-button:focus-visible {
+.modal-close-button:focus {
   background-color: #e6e6e6;
   outline: 3px solid #83b3d3;
 }
