@@ -28,17 +28,11 @@
           <ul class="navigation-user">
             <li class="navigation-item-user">
               <a class="navigation-link search" href="#">
-                <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-                  <path d="M18.5 17.0083L14.8 13.3287C15.8 12.0359 16.5 10.3453 16.5 8.4558C16.5 4.08011 12.9 0.5 8.5 0.5C4.1 0.5 0.5 4.17956 0.5 8.55525C0.5 12.9309 4.1 16.511 8.5 16.511C10.3 16.511 12 15.9144 13.4 14.8204L17.1 18.5L18.5 17.0083ZM8.5 14.5221C5.2 14.5221 2.5 11.837 2.5 8.55525C2.5 5.27348 5.2 2.5884 8.5 2.5884C11.8 2.5884 14.5 5.27348 14.5 8.55525C14.5 11.837 11.8 14.5221 8.5 14.5221Z"/>
-                </svg>
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
             <li class="navigation-item-user">
               <a class="navigation-link favourites" href="#">
-                <svg class="favourites-icon" xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17" fill="none">
-                  <path d="M8.9 17C8.6 17 8.3 16.9 8.1 16.6C2.7 10.5 1.4 9.1 1.1 8.7C0.4 7.8 0 6.6 0 5.4C0 2.4 2.4 0 5.5 0C6.8 0 8 0.5 9 1.3C10 0.5 11.3 0 12.5 0C15.5 0 18 2.4 18 5.4C18 6.7 17.5 7.9 16.7 8.8L9.7 16.7C9.5 16.9 9.3 17 8.9 17ZM2.9 7.5C3.2 7.9 6.4 11.5 9 14.4L15.2 7.4C15.7 6.9 15.9 6.2 15.9 5.4C15.9 3.6 14.4 2.1 12.6 2.1C11.6 2.1 10.6 2.6 9.9 3.4C9.6 3.7 9.3 3.8 9 3.8C8.7 3.8 8.4 3.6 8.2 3.4C7.5 2.6 6.5 2.1 5.5 2.1C3.7 2.1 2.2 3.6 2.2 5.4C2.1 6.3 2.5 7 2.9 7.5C2.8 7.5 2.8 7.5 2.9 7.5Z"/>
-                </svg>
                 <span class="visually-hidden">Избранное</span>
                 <span class="number-of-likes">12</span>
               </a>
@@ -54,11 +48,11 @@
           <h1 class="visually-hidden">Седона</h1>
           <img class="hero-image" src="images/hero-title.svg" width="458" height="352" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
         </section>
+        <div class="container-text">
+          <h2 class="subject">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
+          <p class="desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <section class="advantages" data-test="advantages">
-          <div class="container-text">
-            <h2 class="subject">Седона — небольшой городок в Аризоне, заслуживающий большего!</h2>
-            <p class="desc">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-          </div>
           <ul class="advantages-list">
             <li class="advantages-item background-basic-3">
               <div class="advantages-wrapper">
@@ -96,10 +90,10 @@
         </section>
         <section class="service" data-test="service">
           <div class="container-text-service">
-            <h2 class="subject">Приезжайте в Седону отдохнуть в&nbsp;комфорте и уюте!</h2>
+            <h2 class="subject">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
             <p class="desc">Опытный персонал и качественное обслуживание!</p>
           </div>
-          <ul class="service-list">
+          <ul class="advantages-list container-item">
             <li class="advantages-item background-second-1">
               <div class="service-wrapper house">
                 <h3 class="advantages-name">Жильё</h3>
@@ -109,7 +103,7 @@
             <li class="advantages-item">
               <div class="service-wrapper food">
                 <h3 class="advantages-name">Еда</h3>
-                <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер,<br> вы не разочаруетесь!</p>
+                <p class="advantages-description">Всегда заказывайте<br> топовый фирменный бургер, вы не разочаруетесь!</p>
               </div>
             </li>
             <li class="advantages-item background-second-1">
@@ -121,7 +115,7 @@
           </ul>
         </section>
         <section class="hotel-search" data-test="hotel-search">
-          <div class="container-text-service">
+          <div class="container-text-service text-position">
             <h2 class="subject">Заинтересовались?</h2>
             <p class="desc">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           </div>
@@ -188,14 +182,8 @@
         <span class="visually-hidden">Логотип HTML Academy</span>
       </footer>
     </div>
-    <div class="modal-container modal-container-close">
-      <div class="modal modal-search">
-        <button class="modal-close-button" type="button">
-          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
+    <div class="modal-container">
+      <div class="modal modal-search" data-test="modal">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
@@ -262,6 +250,12 @@
             </div>
           </form>
         </section>
+        <button class="modal-close-button" type="button">
+          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </div>
     </div>
  </body>
