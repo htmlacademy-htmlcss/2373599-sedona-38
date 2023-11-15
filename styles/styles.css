@@ -20,7 +20,7 @@ html {
 
 body {
   min-height: 100%;
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -171,7 +171,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 51px 371px 82px;
-  background-image: url("../images/Vector-hero.png"), url("../images/Mountains-hero.jpg");
+  background-image: url("../images/vector-hero.png"), url("../images/mountains-hero.jpg");
   background-color: #000000;
   background-size: contain;
   background-repeat: no-repeat;
@@ -341,21 +341,21 @@ body {
 }
 
 .house::before {
-  content: url("../images/advantages/Advantage-house.svg");
+  content: url("../images/advantages/advantage-house.svg");
   width: 75px;
   height: 72px;
   margin-bottom: 30px;
 }
 
 .food::before {
-  content: url("../images/advantages/Advantage-food.svg");
+  content: url("../images/advantages/advantage-food.svg");
   width: 75px;
   height: 72px;
   margin-bottom: 30px;
 }
 
 .souvenirs::before {
-  content: url("../images/advantages/Advantage-souvenirs.svg");
+  content: url("../images/advantages/advantage-souvenirs.svg");
   width: 75px;
   height: 72px;
   margin-bottom: 30px;
@@ -379,7 +379,7 @@ body {
 }
 
 .subscribe {
-  background-image: url("../images/Subscribe.jpg");
+  background-image: url("../images/subscribe.jpg");
   background-color: #000000;
   background-size: cover, contain;
   background-repeat: no-repeat;
@@ -449,7 +449,7 @@ body {
 
 .section-filters {
   padding: 35px 70px 73px 70px;
-  background-image: url("../images/Filter.jpg");
+  background-image: url("../images/filter.jpg");
   background-color: #000000;
   background-size: cover, contain;
   background-repeat: no-repeat;
@@ -553,6 +553,7 @@ body {
 }
 
 .filter-list {
+  width: 150px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -678,6 +679,14 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83b3d3;
+}
+
+.range-toggle:active {
+  outline: 2px solid #83b3d3;
 }
 
 .toggle-min {
@@ -870,19 +879,19 @@ body {
 }
 
 .tile {
-  content: url("../images/Tile.svg");
+  content: url("../images/tile.svg");
   width: 16px;
   height: 14px;
 }
 
 .gallery {
-  content: url("../images/Gallery.svg");
+  content: url("../images/gallery.svg");
   width: 16px;
   height: 14px;
 }
 
 .list {
-  content: url("../images/List.svg");
+  content: url("../images/list.svg");
   width: 16px;
   height: 14px;
 }
@@ -1101,7 +1110,7 @@ body {
   fill: #756157;
 }
 
-.footer-logo:focus .footer-logo-image path {
+.footer-logo:focus path {
   fill: #756157;
 }
 
@@ -1258,11 +1267,11 @@ body {
   fill: rgba(0, 0, 0, 1);
 }
 
-.button-quantity:focus .button-condition path {
+.button-quantity:focus path {
   fill: rgba(0, 0, 0, 1);
 }
 
-.button-quantity:active .button-condition path {
+.button-quantity:active path {
   fill: rgba(117, 97, 87, 0.3);
 }
 

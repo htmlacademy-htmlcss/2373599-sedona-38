@@ -12,7 +12,7 @@
         <h2 class="visually-hidden">Навигация сайта</h2>
         <nav class="navigation">
           <a class="navigation-logo">
-            <img class="main-header-logo" src="images/logo_header.svg" width="140" height="70" alt="Логотип City of Sedona" >
+            <img class="main-header-logo" src="images/logo-header.svg" width="140" height="70" alt="Логотип City of Sedona." >
           </a>
           <ul class="navigation-list">
             <li class="navigation-item">
@@ -65,7 +65,7 @@
                 <h3 class="advantages-title text-color">Настоящий городок</h3>
                 <p class="advantages-description text-color">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
-              <img class="advantages-item-img" src="images/advantages/photo-1.jpg" width="800" height="385" alt="Здания города Седона">
+              <img class="advantages-item-img" src="images/advantages/photo-1.jpg" width="800" height="385" alt="Здания города Седона.">
             </li>
             <li class="advantages-item background-second-1">
               <div class="advantages-wrapper advantages-wrapper-position">
@@ -86,7 +86,7 @@
               </div>
             </li>
             <li class="advantages-item background-basic-3">
-              <img class="advantages-item-img" src="images/advantages/photo-2.jpg" width="800" height="385" alt="Каньон Седоны">
+              <img class="advantages-item-img" src="images/advantages/photo-2.jpg" width="800" height="385" alt="Каньон Седоны.">
               <div class="advantages-wrapper">
                 <h3 class="advantages-title text-color">Там есть мост&nbsp;дьявола</h3>
                 <p class="advantages-description text-color">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
@@ -190,24 +190,18 @@
     </div>
     <div class="modal-container modal-container-close">
       <div class="modal modal-search">
-        <button class="modal-close-button" type="button">
-          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
-            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
-          </svg>
-          <span class="visually-hidden">Закрыть</span>
-        </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
             <div class="modal-form">
               <p class="field-group search-form-date">
                 <label class="form-label" for="from">Дата Заезда:</label>
-                <input class="field field-date" type="text" id="from" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату">
+                <input class="field field-date" type="text" id="from" name="arrival-date" value="27 апреля 2020" placeholder="Укажите дату" required>
               </p>
               <span class="info info-error">Мы не можем отправить вас в прошлое.</span>
               <p class="field-group search-form-date">
                 <label class="form-label" for="to">Дата Выезда:</label>
-                <input class="field field-date" type="text" id="to" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату">
+                <input class="field field-date" type="text" id="to" name="departure-date" value="1 сентября 2023" placeholder="Укажите дату" required>
               </p>
               <span class="info">На эти даты есть свободные номера. Пока есть.</span>
               <div class="guests">
@@ -221,7 +215,7 @@
                       <span class="visually-hidden">Уменьшить количество взрослых</span>
                     </button>
                   </div>
-                  <input class="field field-number" id="adult" type="number" name="guests" value="2" max="99">
+                  <input class="field field-number" id="adult" type="number" name="guests" value="2" max="99" required>
                     <div class="button-quantity-wrapper more">
                       <button class="button-quantity" type="button">
                         <svg class="button-condition" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -247,7 +241,7 @@
                     <span class="visually-hidden">Уменьшить количество детей</span>
                   </button>
                 </div>
-                <input class="field field-number" id="children" type="number" name="guests" value="2" max="99">
+                <input class="field field-number" id="children" type="number" name="guests" value="2" max="99" required>
                   <div class="button-quantity-wrapper more">
                     <button class="button-quantity" type="button">
                       <svg class="button-condition" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
@@ -262,6 +256,12 @@
             </div>
           </form>
         </section>
+        <button class="modal-close-button" type="button">
+          <svg class="close" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path d="M14 1.29231L12.7077 0L7 5.70769L1.29231 0L0 1.29231L5.70769 7L0 12.7077L1.29231 14L7 8.29231L12.7077 14L14 12.7077L8.29231 7L14 1.29231Z"/>
+          </svg>
+          <span class="visually-hidden">Закрыть</span>
+        </button>
       </div>
     </div>
  </body>
