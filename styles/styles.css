@@ -129,7 +129,7 @@ body {
   fill: #000000;
 }
 
-.navigation-link:focus .search-icon path {
+.navigation-link:focus path {
   fill: #756157;
 }
 
@@ -137,7 +137,7 @@ body {
   fill: #000000;
 }
 
-.navigation-link:focus .favourites-icon path {
+.navigation-link:focus path {
   fill: #756157;
 }
 
@@ -1083,7 +1083,7 @@ body {
   fill: #68a2ca;
 }
 
-.social-link:focus .footer-social-link path {
+.social-link:focus path {
   fill: #68a2ca;
 }
 
